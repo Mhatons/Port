@@ -10,7 +10,7 @@ let btn = document.getElementById("btn")
 function validate(){
     if(name.value || phone.value || email.value || subject.value || comment.value !== ""){
         
-        fetch("http://localhost:4001/post_form", {
+        fetch("https://imgurapi.cyclic.app//post_form", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
