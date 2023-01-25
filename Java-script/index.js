@@ -5,6 +5,9 @@ let subject = document.getElementById("subject")
 let comment = document.getElementById("comment")
 let btn = document.getElementById("btn")
 
+let err = document.getElementById("err")
+let success = document.getElementById("success")
+
 
 
 function validate(){
@@ -23,10 +26,15 @@ function validate(){
         }).then((resp) => resp.json())
         .then((data) => {
             console.log(data)
+            success.innerHTML = "Comment succefully submitted, thank you"
+            name.value = ""
+            email.value = ""
+            phone.value = ""
+            subject.value = ""
         })
         
     }
     else{
-        console.log("fields are empty")
+        err.innerHTML = "Please ensure all fields are properly filled"
     }
 }

@@ -240,6 +240,9 @@
   border-left: 3px solid rgb(109, 16, 16);
 }
 
+
+
+
 @media (max-width: 454px) {
   .btn3 span {
     font-size: 11px;
