@@ -7,6 +7,7 @@ let btn = document.getElementById("btn")
 
 let err = document.getElementById("err")
 let success = document.getElementById("success")
+let successImg = document.getElementById("successImg")
 
 
 
@@ -26,11 +27,14 @@ function validate(){
         }).then((resp) => resp.json())
         .then((data) => {
             console.log(data)
+            err.style.display = "none"
+            // successImg.style.display = "block"
             success.innerHTML = "Comment succefully submitted, thank you"
             name.value = ""
             email.value = ""
             phone.value = ""
             subject.value = ""
+            comment.value = ""
         })
         
     }
