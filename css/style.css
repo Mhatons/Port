@@ -199,7 +199,9 @@
   transition: 0.5s;
   background-color: #BB2D3B;
 }
-
+.twiImg{
+  height: 34px; padding: 5px;
+}
 .contact_img {
   height: 30px;
   background-color: black;
