@@ -412,4 +412,13 @@
   .contact_details2_sub{
     width: 90%; margin-left: 7px;
   }
+  .to_flx{
+    margin-left: 18vw;
+  }
+}
+
+@media (max-width: 377px){
+  .to_flx{
+    margin-left: 13vw;
+  }
 }
