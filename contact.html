@@ -15,59 +15,65 @@
         <div class="wrk text-white">
             <h1>CONTACT <b class="text-danger">ME</b></h1>
         </div>
-        <div class="row pt-5">
-            <div class="col-lg-5 ps-5 pe-5">
-                <h3 class="text-white">GET IN TOUCH</h3>
-                <P class="abt_txt">My web development jouney is a voyage to a discovery that will change the world and
-                    redefine the existence of
-                    man to a more solid,subtle, less stressful and comfortable living. Until then lets focus on the goal
-                </P>
-                <div class="container abt_txt">
-                    <div><b><img src="./image/placeholder.png" alt="" class="contact_img"> Address:</b>
-                        <p>Abuja, Nigeria 901101</p>
-                    </div>
-                    <div><b><img src="./image/email.png" alt="" class="contact_img"> Email:</b>
-                        <p>mhatons@gmail.com</p>
-                    </div>
-                    <div><b><img src="./image/phone-call.png" alt="" class="contact_img"> Number:</b>
-                        <p>+234-816-0900-616</p>
-                    </div>
-                    <div>
-                        <img src="./image/facebook.png" alt="" class="cont_img">
-                        <a href="https://twitter.com/mhatons"><img src="./image/twitter.png" alt=""
-                                class="cont_img"></a>
-                        <a
-                            href="https://www.linkedin.com/in/mhatons-anthony-a5064a260?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO0jV4V93SDuK2i1bE1T2Kg%3D%3D"><img
-                                src="./image/linkedin.png" alt="" class="cont_img twiImg"></a>
-                        <!-- <img src="./image/youtube.png" alt="" class="cont_img"> -->
-                        <a href="https://www.instagram.com/mhatons/"><img src="./image/instagram (1).png" alt=""
-                                class="cont_img"></a>
+        <div class="contact_details pt-5">
+            <div class="contact_details1">
+                <div class="contact_details1_sub">
+                    <h3 class="text-white">GET IN TOUCH</h3>
+                    <P class="abt_txt">My web development jouney is a voyage to a discovery that will change the world
+                        and
+                        redefine the existence of
+                        man to a more solid,subtle, less stressful and comfortable living. Until then lets focus on the
+                        goal
+                    </P>
+                    <div class="container abt_txt">
+                        <div><b><img src="./image/placeholder.png" alt="" class="contact_img"> Address:</b>
+                            <p>Abuja, Nigeria 901101</p>
+                        </div>
+                        <div><b><img src="./image/email.png" alt="" class="contact_img"> Email:</b>
+                            <p>mhatons@gmail.com</p>
+                        </div>
+                        <div><b><img src="./image/phone-call.png" alt="" class="contact_img"> Number:</b>
+                            <p>+234-816-0900-616</p>
+                        </div>
+                        <div>
+                            <img src="./image/facebook.png" alt="" class="cont_img">
+                            <a href="https://twitter.com/mhatons"><img src="./image/twitter.png" alt=""
+                                    class="cont_img"></a>
+                            <a
+                                href="https://www.linkedin.com/in/mhatons-anthony-a5064a260?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO0jV4V93SDuK2i1bE1T2Kg%3D%3D"><img
+                                    src="./image/linkedin.png" alt="" class="cont_img twiImg"></a>
+                            <a href="https://www.instagram.com/mhatons/"><img src="./image/instagram (1).png" alt=""
+                                    class="cont_img"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <form class="col-lg-7 pe-5 ps-5 pt-5">
-                <div class="contact_flex">
-                    <input type="text" placeholder="Enter your name" name="name" id="name" class="inp-bg">
-                    <input type="number" placeholder="Phone number" name="phone" id="phone" class="inp-bg">
-                </div>
-                <div class="contact_flex">
-                    <input type="email" placeholder="Email address" name="email" id="email" class="inp-bg">
-                    <input type="text" placeholder="your subject" name="subject" id="subject" class="inp-bg">
-                </div>
-                <input type="text" placeholder="Enter your comment here" name="comment" id="comment" class="inp-com">
+            <form class="contact_details2">
+                <div class="contact_details2_sub">
+                    <div class="contact_flex">
+                        <input type="text" placeholder="Enter your name" name="name" id="name" class="inp-bg">
+                        <input type="number" placeholder="Phone number" name="phone" id="phone" class="inp-bg">
+                    </div>
+                    <div class="contact_flex">
+                        <input type="email" placeholder="Email address" name="email" id="email" class="inp-bg">
+                        <input type="text" placeholder="your subject" name="subject" id="subject" class="inp-bg">
+                    </div>
+                    <input type="text" placeholder="Enter your comment here" name="comment" id="comment"
+                        class="inp-com">
 
-                <div>
-                    <span id="err" class="text-danger ps-3"> </span>
-                    <span id="success" class="text-success ps-3"></span>
-                </div>
-                <div class="spinner-grow text-info text-center w-100 mt-3" id="loader" style="height: 4px;"
-                    role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
+                    <div>
+                        <span id="err" class="text-danger ps-3"></span>
+                        <span id="success" class="text-success ps-3"></span>
+                    </div>
+                    <div class="spinner-grow text-info text-center w-100 mt-3" id="loader" style="height: 4px;"
+                        role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
 
-                <div>
-                    <button type="button" onclick={validate()} id="btn"
-                        class="rounded-pill bg-danger text-white p-2 pe-4 ps-4 mt-4 ms-2">Send Message</button>
+                    <div>
+                        <button type="button" onclick={validate()} id="btn"
+                            class="rounded-pill bg-danger text-white p-2 pe-4 ps-4 mt-4 ms-2">Send Message</button>
+                    </div>
                 </div>
             </form>
         </div>

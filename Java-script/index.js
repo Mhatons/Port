@@ -31,7 +31,7 @@ function validate(){
             console.log(data)
             loader.style.display = "none"
             err.style.display = "none"
-            success.innerHTML = "Comment succefully submitted, thank you"
+            success.innerHTML = "Comment succefully submitted, thank you!"
             name.value = ""
             email.value = ""
             phone.value = ""
@@ -41,6 +41,6 @@ function validate(){
         
     }
     else{
-        err.innerHTML = "Please ensure all fields are properly filled"
+        err.innerHTML = "Please ensure no field is empty"
     }
 }
