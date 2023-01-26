@@ -8,13 +8,15 @@ let btn = document.getElementById("btn")
 let err = document.getElementById("err")
 let success = document.getElementById("success")
 let successImg = document.getElementById("successImg")
+let loader = document.getElementById("loader")
 
 
 
 function validate(){
     if(name.value || phone.value || email.value || subject.value || comment.value !== ""){
+        loader.style.display = "block"
         
-        fetch("https://imgurapi.cyclic.app//post_form", {
+        fetch("https://imgurapi.cyclic.app/post_form", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -27,8 +29,8 @@ function validate(){
         }).then((resp) => resp.json())
         .then((data) => {
             console.log(data)
+            loader.style.display = "none"
             err.style.display = "none"
-            // successImg.style.display = "block"
             success.innerHTML = "Comment succefully submitted, thank you"
             name.value = ""
             email.value = ""

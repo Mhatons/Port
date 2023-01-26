@@ -285,6 +285,13 @@
   display: flex; justify-content: space-between;
 }
 
+#loader{
+  display: none;
+}
+
+
+
+
 
 
 
