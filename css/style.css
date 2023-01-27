@@ -130,13 +130,16 @@
 }
 
 .txth {
-  height: 250px;
+  height: 250px; position: relative;
 }
 .txth:hover .txt {
-  display: block;
+  display: block;transition: 4s;
 }
 .txth:hover img {
-  display: none;
+  border-radius: 10px;
+}
+.txth:hover video {
+  /* display: none; */
 }
 
 .txth img {
@@ -144,12 +147,13 @@
 }
 
 .txt {
-  display: none;
+  display: none; position: absolute; z-index: 1; top: 0;
   height: 250px;
 }
 
 .txt-1 {
-  background-color: #222222;
+  background-color: #222222ae; border: 1px solid #BB2D3B;
+  /* background-color: transparent; */
   height: 230px;
 }
 
@@ -161,6 +165,18 @@
 .txt-4 {
   cursor: pointer;
 }
+
+
+.link_img img{
+  height: 50px;
+}
+.link_img{
+  width: 40%; margin: auto;
+}
+/* .netlify{
+  width: 50%; height: 10px;
+} */
+
 
 .inp-bg {
   background-color: #222222;
