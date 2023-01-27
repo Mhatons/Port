@@ -32,11 +32,14 @@ function validate(){
             loader.style.display = "none"
             err.style.display = "none"
             success.innerHTML = "Comment succefully submitted, thank you!"
+
             name.value = ""
             email.value = ""
             phone.value = ""
             subject.value = ""
             comment.value = ""
+
+            btn.style.display = "none"
         })
         
     }
