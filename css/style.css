@@ -130,16 +130,23 @@
 }
 
 .txth {
-  height: 250px; position: relative;
+  height: 250px;
+}
+
+.yes{
+  display: none;
+}
+.txth:hover .yes{
+  display: flex;
 }
 .txth:hover .txt {
   display: block;transition: 4s;
 }
 .txth:hover img {
-  border-radius: 10px;
+  display: none;
 }
 .txth:hover video {
-  /* display: none; */
+  display: none;
 }
 
 .txth img {
@@ -147,13 +154,12 @@
 }
 
 .txt {
-  display: none; position: absolute; z-index: 1; top: 0;
+  display: none;
   height: 250px;
 }
 
 .txt-1 {
-  background-color: #222222ae; border: 1px solid #BB2D3B;
-  /* background-color: transparent; */
+  background-color: #222222;
   height: 230px;
 }
 
@@ -166,16 +172,6 @@
   cursor: pointer;
 }
 
-
-.link_img img{
-  height: 50px;
-}
-.link_img{
-  width: 40%; margin: auto;
-}
-/* .netlify{
-  width: 50%; height: 10px;
-} */
 
 
 .inp-bg {
@@ -326,6 +322,52 @@
 }
 
 
+.port-header{
+  width: 80%; margin: auto;
+}
+
+
+.card-two{
+  display: none; text-align: center; background-color: #222222; padding: 2em 1em;
+  border-radius: 5px;
+}
+.mycard:hover .card-two{
+  display: block;
+}
+.mycard:hover .card-one{
+  display: none;
+}
+.card-one img{
+  height: 219px;
+}
+/* .card-one video{
+  height: 219px;
+} */
+.mycard video{
+  width: 100%;
+}
+.link_img{
+  width: 30%; display: flex; justify-content: space-between; margin: auto; padding-top: 0.3em;
+}
+.link_img img{
+  width: 40%; cursor: pointer;
+}
+
+.link_img2{
+  width: 53%; display: flex; justify-content: space-between; margin: auto; padding-top: 0.3em;
+}
+.link_img2 img{
+  width: 50%; cursor: pointer;
+}
+.port_text{
+  color: white; font-size: 15px; font-weight: 600;
+}
+.text_view{
+  color: #ebe8e8; letter-spacing: 10px; padding-top: 0.5em;
+}
+.card-two:hover .text_view{
+  letter-spacing: 1px; transition: 2s; color: #BB2D3B; font-weight: 600;
+}
 
 
 
