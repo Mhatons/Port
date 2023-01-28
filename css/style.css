@@ -369,6 +369,13 @@
   letter-spacing: 1px; transition: 2s; color: #BB2D3B; font-weight: 600;
 }
 
+.guide{
+  position: fixed; width: 20%; top: 15px; left: 10px;
+}
+.guide img{
+  width: 50px; cursor: pointer;
+}
+
 
 
 
