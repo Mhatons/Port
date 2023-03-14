@@ -9,7 +9,7 @@
   background-color: #222222;
   color: white;
   padding: 15px 0px;
-  width: 19.8%;
+  width: 24.8%;
   margin: auto;
 }
 .btn3 img {
@@ -252,7 +252,8 @@
   border-top-left-radius: 25%;
   border-right: 3px solid rgb(10, 10, 83);
   border-left: 3px solid rgb(109, 16, 16);
-  height: 300px;
+  height: 400px;
+  object-fit: cover;
   /* margin-left: 25%; */
 }
 #successImg{
