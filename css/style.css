@@ -248,11 +248,11 @@
 }
 
 .myimg {
-  border-bottom-right-radius: 25%;
-  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
   border-right: 3px solid rgb(10, 10, 83);
   border-left: 3px solid rgb(109, 16, 16);
-  height: 400px;
+  height: 450px;
   object-fit: cover;
   /* margin-left: 25%; */
 }
